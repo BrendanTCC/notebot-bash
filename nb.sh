@@ -1,22 +1,22 @@
 #!/bin/sh
+EDITOR=${EDITOR:-nano}
 file="${0##*/}"
-ed=nano
 string=/home/$USER/.note
 echo "" > $string
 open_time=120
 time_mins=$((open_time / 60))
+clear
 NOTEBOT_VER="0.2020.6.16"
 figlet -f slant "notebot for bash"
 echo "v$NOTEBOT_VER"
 echo ""
 echo "a project by Brendan Webb."
-echo "($ed is set as your editor. Change this by opening '$file' in your favourite editor.)"
 sleep 5
 clear
 echo "Hello, $USER!"
-echo "i'm gonna start up $ed for you. chuck what you want it to say in there, and then exit. Be sure to save it."
+echo "i'm gonna start up $EDITOR for you. chuck what you want it to say in there, and then exit. Be sure to save it."
 sleep 2
-$ed $string
+$EDITOR $string
 clear
 echo "getting ready..."
 sleep 2
