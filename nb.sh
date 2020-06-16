@@ -3,8 +3,9 @@ file="${0##*/}"
 ed=nano
 string=/home/$USER/.note
 echo "" > $string
-dot_speed=666
-NOTEBOT_VER="0.15.6.2020b"
+open_time=120
+time_mins=$((open_time / 60))
+NOTEBOT_VER="0.2020.6.16"
 figlet -f slant "notebot for bash"
 echo "v$NOTEBOT_VER"
 echo ""
@@ -30,6 +31,7 @@ echo "starting in 1"
 sleep 1
 clear
 echo "Hello! $USER told me to tell you the following:"
+echo ""
 cat $string
 sleep 1
 echo ""
@@ -41,7 +43,6 @@ echo ""
 echo ""
 echo "(by the way, $USER: this file is also available at $string)"
 echo "(this file will automatically be cleared the next time this script is started, to, y'know, make room for a new note.)"
-sleep "$dot_speed"
+echo "as for when this file will close: it'll close after $time_mins minutes ($open_time seconds)."
+sleep "$open_time"
 clear
-
-eof
