@@ -11,24 +11,12 @@ figlet -f slant "notebot for bash"
 echo "v$NOTEBOT_VER"
 echo ""
 echo "a project by Brendan Webb."
-sleep 5
+sleep 2
 clear
 echo "Hello, $USER!"
 echo "i'm gonna start up $EDITOR for you. chuck what you want it to say in there, and then exit. Be sure to save it."
 sleep 2
 $EDITOR $string
-clear
-echo "getting ready..."
-sleep 2
-clear
-echo "starting in 3"
-sleep 1
-clear
-echo "starting in 2"
-sleep 1
-clear
-echo "starting in 1"
-sleep 1
 clear
 echo "Hello! $USER told me to tell you the following:"
 echo ""
@@ -36,7 +24,6 @@ cat $string
 sleep 1
 echo ""
 echo "hold down [ctrl] and press [c] to quit."
-sleep 2
 echo ""
 echo ""
 echo ""
