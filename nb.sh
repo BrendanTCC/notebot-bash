@@ -30,6 +30,6 @@ echo ""
 echo ""
 echo "(by the way, $USER: this file is also available at $string)"
 echo "(this file will automatically be cleared the next time this script is started, to, y'know, make room for a new note.)"
-echo "as for when this file will close: it'll clear the screen and close after $time_mins minutes ($open_time seconds)."
+echo "as for when this script will terminate: it'll clear the screen and close after $time_mins minutes ($open_time seconds)."
 sleep "$open_time"
 clear
