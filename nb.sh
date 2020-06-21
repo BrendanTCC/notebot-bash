@@ -11,6 +11,7 @@ figlet -f slant "notebot for bash"
 echo "v$NOTEBOT_VER"
 echo ""
 echo "a project by Brendan Webb."
+echo "(script keep-alive time is set to $time_mins minutes.\nyou can change the keep-alive time (in seconds) by changing the \$open_time variable.)"
 sleep 2
 clear
 echo "Hello, $USER!"
@@ -20,7 +21,9 @@ $EDITOR $string
 clear
 echo "Hello! $USER told me to tell you the following:"
 echo ""
+echo "----[NOTE BLOCK START]----"
 cat $string
+echo "-----[NOTE BLOCK END]-----"
 sleep 1
 echo ""
 echo "hold down [ctrl] and press [c] to quit."
