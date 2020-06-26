@@ -6,8 +6,8 @@ echo "" > $string
 open_time=120
 time_mins=$((open_time / 60))
 clear
-NOTEBOT_VER="0.2020.6.22"
-figlet -f slant "notebot for bash"
+NOTEBOT_VER="0.2020.6.26"
+cat logo
 echo "v$NOTEBOT_VER"
 echo ""
 echo "a project by Brendan Webb."
