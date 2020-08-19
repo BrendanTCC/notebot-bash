@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 EDITOR=${EDITOR:-nano}
 file="${0##*/}"
 string=/home/$USER/.note
