@@ -36,3 +36,4 @@ echo "(this file will automatically be cleared the next time this script is star
 echo "as for when this script will terminate: it'll clear the screen and close after $time_mins minutes ($open_time seconds)."
 sleep "$open_time"
 clear
+
